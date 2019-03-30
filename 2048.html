@@ -297,13 +297,20 @@ function newTile(){
 
 		function checkContinuable(){
 
-	// check for win or empty space
+	// check for win
 	for(var i = 0; i<4; i++){
 		for(var j = 0; j<4; j++){
 			if(grid[i][j] >= 2048){
 				alert(2048);
 				return 0;
-			}else if(grid[i][j]==0){
+			}
+		}
+	}
+
+	// check for empty space
+	for(var i = 0; i<4; i++){
+		for(var j = 0; j<4; j++){
+			if(grid[i][j]==0){
 				return 1;
 			}
 		}
