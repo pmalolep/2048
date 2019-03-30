@@ -1,106 +1,106 @@
 <!DOCTYPE html>
 <!-- saved from url=(0066)https://s3-us-west-1.amazonaws.com/www.2048.pmalolep.com/2048.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-	<title>2048</title>
-	<style>
-	html, body {
-		margin: 0px;
-		padding: 0px;
-		min-height: 100%;
-		width: 100%;
-	}
-	.b1{
-		background-color: #8e4625;
-		height: 100%;
-		width: 100%;
-		margin:0;
 
-		position: absolute;
-		bottom: 0;
-	}
-	.b2{
-		background-color: #eac1ae;
-		height: 100%;
-		width: 60%;
+<title>2048</title>
+<style>
+html, body {
+	margin: 0px;
+	padding: 0px;
+	min-height: 100%;
+	width: 100%;
+}
+.b1{
+	background-color: #8e4625;
+	height: 100%;
+	width: 100%;
+	margin:0;
 
-		margin-left:auto;
-		margin-right:auto;
-		
-		bottom: 0;
-	}
-	.h1{
-		font-size: 64px;
-	}
-	.grid-container {
-		display: grid;
-		grid-template-columns: auto auto auto auto;
+	position: absolute;
+	bottom: 0;
+}
+.b2{
+	background-color: #eac1ae;
+	height: 100%;
+	width: 60%;
 
-		background-color: black;
-		border: solid 1px black;
+	margin-left:auto;
+	margin-right:auto;
 
-		width:480px;
-		height:480px;
+	bottom: 0;
+}
+.h1{
+	font-size: 64px;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
 
-	}
-	.center {
-		display: block;
-		padding:0;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.grid-item {
-		/*border: 1px solid black;*/
+	background-color: black;
+	border: solid 1px black;
 
-		max-width:120px;
-		min-width:120px;
+	width:480px;
+	height:480px;
 
-		padding-top:38%;
-		
-		font-size: 30px;
-		text-align: center;
-	}
-	.footer{
-		bottom:0;
-		margin:0;
-		padding:0;
-		font-size:11px;
-	}
+}
+.center {
+	display: block;
+	padding:0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid-item {
+	/*border: 1px solid black;*/
+
+	max-width:120px;
+	min-width:120px;
+
+	padding-top:38%;
+
+	font-size: 30px;
+	text-align: center;
+}
+.footer{
+	bottom:0;
+	margin:0;
+	padding:0;
+	font-size:11px;
+}
 </style>
 </head>
 <body>
-	<div class="b1">
-		<div class="b2">
-			<br><br>
-			<div class="center" style="text-align: center;"><h1 style="margin:0;padding:0;">2048</h1></div>
-			<div class="center" style="width:480px;">
-				<div class="grid-container">
-					<div class="grid-item" id="0-0" style="background-color: whitesmoke;">‍</div>
-					<div class="grid-item" id="1-0" style="background-color: whitesmoke;">‍</div>
-					<div class="grid-item" id="2-0" style="background-color: whitesmoke;">‍</div>  
-					<div class="grid-item" id="3-0" style="background-color: whitesmoke;">‍</div>
-					<div class="grid-item" id="0-1" style="background-color: whitesmoke;">‍</div>
-					<div class="grid-item" id="1-1" style="background-color: lightyellow;">2</div>  
-					<div class="grid-item" id="2-1" style="background-color: lemonchiffon;">4</div>
-					<div class="grid-item" id="3-1" style="background-color: papayawhip;">8</div>
-					<div class="grid-item" id="0-2" style="background-color: rgb(255, 201, 184);">128</div>
-					<div class="grid-item" id="1-2" style="background-color: peachpuff;">64</div>  
-					<div class="grid-item" id="2-2" style="background-color: moccasin;">32</div>
-					<div class="grid-item" id="3-2" style="background-color: palegoldenrod;">16</div>
-					<div class="grid-item" id="0-3" style="background-color: rgb(255, 184, 184);">256</div>
-					<div class="grid-item" id="1-3" style="background-color: rgb(255, 153, 168);">512</div>
-					<div class="grid-item" id="2-3" style="background-color: lightcoral;">1024</div>
-					<div class="grid-item" id="3-3" style="background-color: deeppink;">2048</div>
-				</div>
-			</div>
+<div class="b1">
+<div class="b2">
+<br><br>
+<div class="center" style="text-align: center;"><h1 style="margin:0;padding:0;">2048</h1></div>
+<div class="center" style="width:480px;">
+<div class="grid-container">
+<div class="grid-item" id="0-0" style="background-color: whitesmoke;">‍</div>
+<div class="grid-item" id="1-0" style="background-color: whitesmoke;">‍</div>
+<div class="grid-item" id="2-0" style="background-color: whitesmoke;">‍</div>  
+<div class="grid-item" id="3-0" style="background-color: whitesmoke;">‍</div>
+<div class="grid-item" id="0-1" style="background-color: whitesmoke;">‍</div>
+<div class="grid-item" id="1-1" style="background-color: lightyellow;">2</div>  
+<div class="grid-item" id="2-1" style="background-color: lemonchiffon;">4</div>
+<div class="grid-item" id="3-1" style="background-color: papayawhip;">8</div>
+<div class="grid-item" id="0-2" style="background-color: rgb(255, 201, 184);">128</div>
+<div class="grid-item" id="1-2" style="background-color: peachpuff;">64</div>  
+<div class="grid-item" id="2-2" style="background-color: moccasin;">32</div>
+<div class="grid-item" id="3-2" style="background-color: palegoldenrod;">16</div>
+<div class="grid-item" id="0-3" style="background-color: rgb(255, 184, 184);">256</div>
+<div class="grid-item" id="1-3" style="background-color: rgb(255, 153, 168);">512</div>
+<div class="grid-item" id="2-3" style="background-color: lightcoral;">1024</div>
+<div class="grid-item" id="3-3" style="background-color: deeppink;">2048</div>
+</div>
+</div>
 
-			<br>
-			<div class="center"><h3><center>Use the arrow keys to move the tiles.<br><br>Combine tiles to work up to 2048!</center></h3></div>
+<br>
+<div class="center"><h3><center>Use the arrow keys to move the tiles.<br><br>Combine tiles to work up to 2048!</center></h3></div>
 
-			<div class="footer"><center>Made by Peter Malolepszy</center></div>
-		</div>
-	</div>
-	<script>
+<div class="footer"><center>Made by Peter Malolepszy</center></div>
+</div>
+</div>
+<script>
 // var grid = [[2,4,64,128],
 // 			[8,16,128,512],
 // 			[16,32,256,2048],
@@ -120,19 +120,19 @@ var started = false;
 
 document.onkeydown = function controls(event){
 	if(started){
-	
-	switch(event.keyCode){
-		case 38:moveUp();break;
-		case 40:moveDown();break;
-		case 37:moveLeft();break;
-		case 39:moveRight();break;
+
+		switch(event.keyCode){
+			case 38:moveUp();break;
+			case 40:moveDown();break;
+			case 37:moveLeft();break;
+			case 39:moveRight();break;
+		}
 	}
-}
-else{
-	console.log('Made by Peter Malolepszy');
-	started = true;
-	newGame();
-}
+	else{
+		console.log('Made by Peter Malolepszy');
+		started = true;
+		newGame();
+	}
 	
 };
 
@@ -244,8 +244,8 @@ function updateDisplay(){
 			}
 			
 			document.getElementById(j+'-'+i).style.backgroundColor = colorSelector(grid[i][j]);
-		}
-	}
+}
+}
 }
 
 function colorSelector(tileValue){
@@ -272,113 +272,63 @@ function newTile(){
 
 	do{
 		rx = Math.floor(Math.random()*4);
-		ry = Math.floor(Math.random()*4);
-	}while(grid[ry][rx]);
+			ry = Math.floor(Math.random()*4);
+		}while(grid[ry][rx]);
 
-	grid[ry][rx] = Math.floor(Math.random()*2+1)*2;
-	console.log(grid);
+			grid[ry][rx] = Math.floor(Math.random()*2+1)*2;
+			// console.log(grid);
 
-}
+		}
 
-function next(){
+		function next(){
 
-	combinationsGrid =
-	[[1,1,1,1],
-	[1,1,1,1],
-	[1,1,1,1],
-	[1,1,1,1]];
-	newTile();
-	updateDisplay();
-	if(!checkContinuable()){
-		newGame();
-	}
-	updateDisplay();
-}
+			combinationsGrid =
+			[[1,1,1,1],
+			[1,1,1,1],
+			[1,1,1,1],
+			[1,1,1,1]];
+			newTile();
+			updateDisplay();
+			if(!checkContinuable()){
+				newGame();
+			}
+			updateDisplay();
+		}
 
-function checkContinuable(){
+		function checkContinuable(){
+
+	// check for win or empty space
 	for(var i = 0; i<4; i++){
 		for(var j = 0; j<4; j++){
 			if(grid[i][j] >= 2048){
 				alert(2048);
 				return 0;
+			}else if(grid[i][j]==0){
+				return 1;
 			}
 		}
 	}
-
+	
+	// check for horizontal pairs
 	for(var i = 0; i<4; i++){
-		for(var j = 0; j<4; j++){
-			if(grid[i][j]==0){
+		for(var j = 0; j<3; j++){
+			if( grid[i][j] == grid[i][j+1]){
+				return 1;
+			}
+		}
+	}
+	// check for vertical pairs
+	for(var i = 0; i<4; i++){
+		for(var j = 0; j<3; j++){
+			if( grid[j][i] == grid[j+1][i]){
 				return 1;
 			}
 		}
 	}
 
-	for(var i=0; i<4; i++){
-		for(var j=0; j<4; j++){
-			if( i==0 ){
-				if( j==0){
-					if(	grid[i][j] == grid[i+1][j] ||
-						grid[i][j] == grid[i][j+1]){
-						return 1;
-				}
-			}else if( j==3 ){
-				if(	grid[i][j] == grid[i+1][j] ||
-					grid[i][j] == grid[i][j-1] ){
-					return 1;
-			}
-		}else{
-			if(grid[i][j] == grid[i+1][j] ||
-				grid[i][j] == grid[i][j-1] ||
-				grid[i][j] == grid[i][j+1]){
-				return 1;
-		}
-	}
-}else if( i==3 ){
-	if( j==0){
-		if(grid[i][j] == grid[i-1][j] ||
-			grid[i][j] == grid[i][j+1]){
-			return 1;
-	}
-}else if( j==3 ){
-	if(grid[i][j] == grid[i-1][j] ||
-		grid[i][j] == grid[i][j-1] ){
-		return 1;
-}	
-}else{
-	if(grid[i][j] == grid[i-1][j] ||
-		grid[i][j] == grid[i][j-1] ||
-		grid[i][j] == grid[i][j+1]){
-		return 1;
-}
-}
-}else{
-	if(j==0){
-		if(grid[i][j] == grid[i-1][j] ||
-			grid[i][j] == grid[i+1][j] ||
-			grid[i][j] == grid[i][j+1]){
-			return 1;
-	}
-}else if( j==3 ){
-	if(grid[i][j] == grid[i-1][j] ||
-		grid[i][j] == grid[i+1][j] ||
-		grid[i][j] == grid[i][j-1] ){
-		return 1;
-}
-}else{
-	if(grid[i][j] == grid[i-1][j] ||
-		grid[i][j] == grid[i+1][j] ||
-		grid[i][j] == grid[i][j-1] ||
-		grid[i][j] == grid[i][j+1]){
-
-		return 1;
-}
-}
-}
-}
-}
-
-alert('YOU LOSE');
-return 0;
+	// no win condition, no empty spaces, no pairs
+	alert('YOU LOSE');
+	return 0;
 }
 
 function newGame(){
@@ -391,6 +341,8 @@ function newGame(){
 	newTile();
 	newTile();
 	updateDisplay();
+
+	console.log("updated 3/29/2019");
 }
 
 document.addEventListener('touchstart', handleTouchStart, false);        
@@ -402,49 +354,49 @@ var yDown = null;
 function getTouches(evt) {
   return evt.touches ||             // browser API
          evt.originalEvent.touches; // jQuery
-}                                                     
+     }                                                     
 
-function handleTouchStart(evt) {
-    const firstTouch = getTouches(evt)[0];                                      
-    xDown = firstTouch.clientX;                                      
-    yDown = firstTouch.clientY;                                      
-};                                                
+     function handleTouchStart(evt) {
+     	const firstTouch = getTouches(evt)[0];                                      
+     	xDown = firstTouch.clientX;                                      
+     	yDown = firstTouch.clientY;                                      
+     };                                                
 
-function handleTouchMove(evt) {
-	if(started){
-    if ( ! xDown || ! yDown ) {
-        return;
-    }
+     function handleTouchMove(evt) {
+     	if(started){
+     		if ( ! xDown || ! yDown ) {
+     			return;
+     		}
 
-    var xUp = evt.touches[0].clientX;                                    
-    var yUp = evt.touches[0].clientY;
+     		var xUp = evt.touches[0].clientX;                                    
+     		var yUp = evt.touches[0].clientY;
 
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
+     		var xDiff = xDown - xUp;
+     		var yDiff = yDown - yUp;
 
-    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
-            moveLeft();
-        } else {
-            moveRight();
-        }                       
-    } else {
-        if ( yDiff > 0 ) {
-            moveUp();
-        } else { 
-            moveDown();
-        }                                                                 
-    }
-    /* reset values */
-    xDown = null;
-    yDown = null;  
-    }
-    else{
-    	console.log('Made by Peter Malolepszy');
-    	started = true;
-    	newGame();
-    }                                           
-};
+     		if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+     			if ( xDiff > 0 ) {
+     				moveLeft();
+     			} else {
+     				moveRight();
+     			}                       
+     		} else {
+     			if ( yDiff > 0 ) {
+     				moveUp();
+     			} else { 
+     				moveDown();
+     			}                                                                 
+     		}
+     		/* reset values */
+     		xDown = null;
+     		yDown = null;  
+     	}
+     	else{
+     		console.log('Made by Peter Malolepszy');
+     		started = true;
+     		newGame();
+     	}                                           
+     };
 
 
 // document.onload = newGame();
